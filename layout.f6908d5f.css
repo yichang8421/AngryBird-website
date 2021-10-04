@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #eee;
+}
+
+#buttons {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#buttons > button {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+
+    color: #2a9e78;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid #64c2ed;
+    padding: 8px 12px;
+    background: #f4faff;
+    border-radius: 10px;
+}
+
+#buttons > button:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #00aeff;
+    background: #d9efff;
+}
+
+#text {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#text::-webkit-scrollbar {
+    display: none;
+}
+
+#bird {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+#htmlStyle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #text {
+        top: 0;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #bird {
+        top: 50vh;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/*# sourceMappingURL=layout.f6908d5f.css.map */
